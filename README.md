@@ -4,7 +4,7 @@
 
 Built for **Global Innovation Build Challenge V2 — Track 03: Open (General Technical Invention)**.
 
-🔗 **Live Demo:** https://scam-shield-bd-mu.vercel.app/
+🔗 **Live Demo:** https://scam-shield-bd-bob.vercel.app/
 
 **## What it does**
 
