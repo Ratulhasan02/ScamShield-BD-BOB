@@ -29,6 +29,7 @@ export default function Footer() {
             <Link href="/admin/login" className="hover:text-brand-400">{footT("navAdmin")}</Link>
           </div>
         </div>
+        <p className="mt-8 text-xs text-white/30">{footT("footerRights")}</p>
       </div>
     </footer>
   );

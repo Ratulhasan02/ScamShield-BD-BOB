@@ -28,7 +28,7 @@ export default function Hero() {
               <circle cx="13.5" cy="9" r="6" fill="#f42a41" />
             </svg>
           </span>
-          <span className="min-w-0 break-words">Built for Bangladesh</span>
+          <span className="min-w-0 break-words">Built for Bangladesh · GIBC V2 · Track 03: Open</span>
         </span>
         <h1
           className={`mt-6 text-4xl font-extrabold tracking-tight sm:text-6xl ${isLight ? "" : "text-white"}`}
