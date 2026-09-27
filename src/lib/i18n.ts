@@ -1,0 +1,58 @@
+export type Lang = "en" | "bn";
+
+export const dict = {
+  en: {
+    appName: "ScamShield BD",
+    tagline: "Detect scams before they cost you.",
+    subtitle: "AI-powered scam detection and community intelligence for Bangladesh.",
+    checkScam: "Check a Scam",
+    reportScam: "Report a Scam",
+    navHome: "Home",
+    navCheck: "Scam Checker",
+    navCommunity: "Community Reports",
+    navReport: "Report",
+    navAdmin: "Admin",
+    statsReported: "Scams Reported",
+    statsProtected: "Users Protected",
+    statsThreats: "Threats Detected",
+    statsVerified: "Reports Verified",
+    demoLabel: "Demo / sample data",
+    howItWorks: "How It Works",
+    scamCategories: "Scam Categories",
+    scamIntelligence: "Scam Intelligence — Scam DNA",
+    communityReports: "Community Reports",
+    safetyTips: "Safety Tips",
+    ctaTitle: "Protect yourself and your community",
+    ctaSubtitle: "It takes 60 seconds to check something suspicious.",
+    footerRights: "Built for Global Innovation Build Challenge V2 — Track 03: Open.",
+  },
+  bn: {
+    appName: "স্ক্যামশিল্ড বিডি",
+    tagline: "ক্ষতি হওয়ার আগেই প্রতারণা চিহ্নিত করুন।",
+    subtitle: "বাংলাদেশের জন্য AI-চালিত স্ক্যাম শনাক্তকরণ ও কমিউনিটি ইনটেলিজেন্স।",
+    checkScam: "স্ক্যাম চেক করুন",
+    reportScam: "স্ক্যাম রিপোর্ট করুন",
+    navHome: "হোম",
+    navCheck: "স্ক্যাম চেকার",
+    navCommunity: "কমিউনিটি রিপোর্ট",
+    navReport: "রিপোর্ট",
+    navAdmin: "অ্যাডমিন",
+    statsReported: "রিপোর্ট হওয়া স্ক্যাম",
+    statsProtected: "সুরক্ষিত ব্যবহারকারী",
+    statsThreats: "শনাক্তকৃত হুমকি",
+    statsVerified: "যাচাইকৃত রিপোর্ট",
+    demoLabel: "ডেমো / নমুনা ডেটা",
+    howItWorks: "কীভাবে কাজ করে",
+    scamCategories: "স্ক্যামের ধরন",
+    scamIntelligence: "স্ক্যাম ইনটেলিজেন্স — স্ক্যাম ডিএনএ",
+    communityReports: "কমিউনিটি রিপোর্ট",
+    safetyTips: "নিরাপত্তা পরামর্শ",
+    ctaTitle: "নিজেকে ও আপনার কমিউনিটিকে সুরক্ষিত করুন",
+    ctaSubtitle: "সন্দেহজনক কিছু যাচাই করতে মাত্র ৬০ সেকেন্ড সময় লাগে।",
+    footerRights: "Global Innovation Build Challenge V2 — Track 03: Open এর জন্য তৈরি।",
+  },
+} as const;
+
+export function t(lang: Lang, key: keyof typeof dict.en): string {
+  return dict[lang][key] || dict.en[key];
+}
